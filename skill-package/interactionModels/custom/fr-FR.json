@@ -1,0 +1,79 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "kitchen owl",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "c'est tout",
+                        "merci",
+                        "merci"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddItemIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "{item}",
+                        "ajoute {item}",
+                        "ajoute {item} à la liste",
+                        "mets {item} dans ma liste",
+                        "mets {item} dans ma liste de course"
+                    ]
+                },
+                {
+                    "name": "RemoveItemIntent",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "supprime {item}",
+                        "retire {item}"
+                    ]
+                },
+                {
+                    "name": "ListItemsIntent",
+                    "samples": [
+                        "Qu'est-ce qu'il y a dans ma liste",
+                        "J'ai quoi dans ma liste"
+                    ]
+                },
+                {
+                    "name": "ClearCompletedItemsIntent",
+                    "samples": [
+                        "supprime tout les finis",
+                        "supprime tous les complétés",
+                        "nettoie la liste",
+                        "range la liste"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
